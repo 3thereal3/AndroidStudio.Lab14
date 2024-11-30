@@ -1,16 +1,22 @@
-# lab14
+# Native Camera App
 
-A new Flutter project.
+This application utilizes native platform capabilities to implement the following features:
 
-## Getting Started
+1. Interaction with native code via `MethodChannel`.
+2. Using the device's camera to take photos and display them in the app.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- The user can take a photo using the smartphone's camera, which will then be displayed in the app.
+- The user can press a button to receive a message from the native code (a static text "Hi, Mom!" is returned).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Functionality
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Take a Photo**: Using the "Take a photo" button, the user can capture a photo, which will be displayed within the app interface.
+2. **Get Hello Message**: Using the "Get Hello Message" button, the user can retrieve a message from the native code via `MethodChannel`. This message is a simple text: "Hi, Mom!".
+
+## Technologies Used
+
+- **Flutter**: A cross-platform framework for building mobile apps.
+- **Image Picker**: A package for capturing photos or picking images from the gallery.
+- **MethodChannel**: For communication with native Android and iOS code.
